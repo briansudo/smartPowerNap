@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <PreferenceCategory android:title="@string/pref_appearance" >
+        <ListPreference
+            android:key="prefColors"
+            android:entries="@array/appColors"
+            android:summary="@string/pref_colors_summary"
+            android:entryValues="@array/appColorValues"
+            android:title="@string/pref_color_frequency" />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_func_setting" >
+        
+        <RingtonePreference
+	        android:key="prefRingtone"
+	        android:title="Ringtone"
+	        android:summary="Customize your alarm"
+	        android:showDefault="true"
+	        android:showSilent="true" />
+        
+        <CheckBoxPreference
+            android:key="prefVibrate"
+            android:title="Vibrate"
+            android:enabled="true"
+            android:defaultValue="true" />
+        
+        <EditTextPreference
+            android:key="prefTimer"
+            android:title="Alarm Duration"
+            android:dialogTitle="Set alarm duration"
+            android:summary="Set Alarm Duration"
+            android:defaultValue="20" />
+        
+        <EditTextPreference
+            android:key="prefSleep"
+            android:title="Sleep Time"
+            android:dialogTitle="Set the time needed to fall asleep"
+            android:summary="Set the time needed to fall asleep" />
+        
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_about" >
+        
+        <Preference
+            android:key="about"
+            android:title="About this app" >
+            <intent android:action=".settings.AboutActivity"/>
+        </Preference>
+        
+        <CheckBoxPreference 
+            android:key="prefDemo"
+            android:title="Demo Mode"
+            android:summary="Use seconds instead of minutes for everything" />
+        
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

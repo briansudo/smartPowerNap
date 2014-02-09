@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appColors">
+        <item name="red">Red</item>
+        <item name="orange">Orange</item>
+        <item name="green">Green</item>
+        <item name="purple">Purple</item>
+        <item name="blue">Blue</item>
+    </string-array>
+    <string-array name="appColorValues">
+        <item name="red">#FF4444 #CC0000</item>
+        <item name="orange">#FFBB33 #FF8800</item>
+        <item name="green">#99CC00 #669900</item>
+        <item name="purple">#AA66CC #9933CC</item>
+        <item name="blue">#33B5E5 #0099CC</item>
+    </string-array>
+    
+</resources>
+ 

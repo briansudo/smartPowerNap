@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/light_blue" >
+    
+    <TextView
+        android:id="@+id/alarm_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="64sp"
+        android:layout_marginTop="42dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/countdown" />  
+    
+    <TextView
+		android:id="@+id/must_wake_text"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:textSize="16sp"
+		android:textColor="#FFFFFF"
+		android:text="@string/must_wake_up"
+		/>
+
+    <Button
+        android:id="@+id/set_alarm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/dark_blue"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/set_alarm_button"
+        android:textColor="#FFFFFF" />
+    
+    <TextView 
+        android:id="@+id/calibrated_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calibrated"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
